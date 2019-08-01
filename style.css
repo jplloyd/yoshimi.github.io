@@ -39,6 +39,14 @@ menu
     text-decoration: none;
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menurow
+{
+    display:flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
