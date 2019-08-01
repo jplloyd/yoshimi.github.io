@@ -1,0 +1,61 @@
+body
+{
+    margin:0px;
+}
+
+header
+{
+    background-color: #aaeeff;
+    color: #000;
+    text-align:center;
+}
+
+#logo
+{
+    margin:1em;
+    max-width: 50vw;
+}
+
+subtitle
+{
+    margin:1em;
+    font-size: 16pt;
+    font-family:sans-serif;
+}
+
+menu
+{
+    background-color: #9ce0f1;
+    font-family: Ubuntu, Arial, sans-serif;
+    font-weight:bold;
+    font-size: 14pt;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+menu a
+{
+    text-decoration: none;
+}
+
+menu a:hover
+{
+    text-shadow: rgba(0,0,0, 0.2) 1px 1px 1px;
+}
+
+menu a:visited
+{
+    color:inherit;
+}
+
+main
+{
+    background-color:#d5f6ff;
+}
+
+footer
+{
+    background-color:#b8dee8;
+    text-align:center;
+    padding:2em;
+}
