@@ -1,6 +1,7 @@
 body
 {
     margin:0px;
+    background-image: url(img/bg.png);
 }
 
 header
@@ -82,6 +83,7 @@ menu a:visited
 
 main
 {
+    background-color:#fff;
     padding:1em;
     padding-top:0em;
 }
