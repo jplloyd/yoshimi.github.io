@@ -11,6 +11,11 @@ header
     text-align:center;
 }
 
+h1
+{
+    font-family:Ubuntu, Arial, sans-serif;
+}
+
 #logo
 {
     margin-top:1em;
@@ -83,9 +88,8 @@ menu a:visited
 
 .active
 {
-    border:solid black;
-    border-width: 2px 0;
-    margin:-2px 0px;
+    border-radius: 5px 5px;
+    box-shadow: rgba(0,0,0,0.5) 0px 0px 4px;
 }
 
 main
