@@ -9,6 +9,7 @@ from distutils import file_util, dir_util
 import json
 from os import path
 from itertools import groupby
+from functools import partial
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -37,7 +38,7 @@ def gen_site(conf_data):
     footer_links = conf_data["footer_links"]
     menu_link_list = conf_data["menu_links"]
     template_path = conf_data["template"]
-    to_copy = conf_data["copy"]
+    to_copy = conf_data.get("copy", None)
     template = readfile(template_path)
 
     def is_divider(i):
@@ -49,7 +50,8 @@ def gen_site(conf_data):
     for src in src_paths:
         gen_page(src, footer_links, menu_groups, template)
 
-    copy_files(to_copy)
+    if to_copy:
+        copy_files(to_copy)
     # It seems everything worked out
     logger.info(
         'Website files successfully written to "{output_dir}/".'.format(
@@ -62,21 +64,25 @@ def gen_page(src_path, footer_links, menu_groups, template):
     src_name = path.basename(src_path)
     src = readfile(src_path)
     menu_rows = gen_menu(src_name, menu_groups)
+    footer_iter = map(partial(gen_footer_link, src_name), footer_links)
     output = template.format(
         menu_rows=menu_rows,
         content=src,
-        footer_links="".join(map(gen_footer_link, footer_links))
+        footer_links="".join(footer_iter)
     )
     out_path = path.join(BUILD_DIR, src_name)
     with open(out_path, "w") as outfile:
         outfile.write(output)
 
 
-def gen_footer_link(footer_link):
-    link_template = '<a href="{url}">{name}</a>'
+def gen_footer_link(src_url, footer_link):
+    link_template = '<a href="{url}" {style}>{name}</a>'
+    url = footer_link["url"]
+    style = 'style="font-weight:bold"' if src_url == url else ''
     return link_template.format(
-        url=footer_link["url"],
+        url=url,
         name=footer_link["name"],
+        style=style,
     )
 
 
