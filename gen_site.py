@@ -7,7 +7,7 @@
 
 from distutils import file_util, dir_util
 import json
-from os import path
+from os import getenv, path
 from itertools import groupby
 from functools import partial
 import logging
@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__file__)
 
 CONF = "site.json"
-BUILD_DIR = "out"
+BUILD_DIR = getenv("BUILD_DIR", "out")
 
 
 def main():
