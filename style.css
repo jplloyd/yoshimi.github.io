@@ -2,6 +2,7 @@ body
 {
     margin:0px;
     background-image: url(img/bg.png);
+    font-family: sans-serif;
 }
 
 header
@@ -16,16 +17,39 @@ h1
     font-family:Ubuntu, Arial, sans-serif;
 }
 
+hr
+{
+    border: 0px;
+    background-image: url(img/divider.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    height:40px;
+}
+
+ul
+{
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+}
+
+ul p
+{
+    font-weight:normal;
+    font-style: italic;
+}
+
 #logo
 {
     margin-top:1em;
     max-width: 50vw;
+    max-height: 100px;
 }
 
 #subtitle
 {
     margin:1em;
-    font-size: 16pt;
+    font-size: 16px;
     font-family:sans-serif;
 }
 
@@ -40,7 +64,7 @@ menu
     max-width:800px;
     font-family: Ubuntu, Arial, sans-serif;
     font-weight:bold;
-    font-size: 14pt;
+    font-size: 14px;
     padding: 0.5em;
     text-decoration: none;
     display:flex;
@@ -103,6 +127,12 @@ main
     padding-top:0em;
     max-width:1000px;
     margin:auto;
+    text-align:center
+}
+
+main img
+{
+    max-width:100%;
 }
 
 footer
