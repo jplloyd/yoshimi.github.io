@@ -81,6 +81,13 @@ menu a:visited
     color:inherit;
 }
 
+.active
+{
+    border:solid black;
+    border-width: 2px 0;
+    margin:-2px 0px;
+}
+
 main
 {
     background-color:#fff;

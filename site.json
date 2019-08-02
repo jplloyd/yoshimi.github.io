@@ -1,0 +1,61 @@
+{
+    "copy": [
+	"style.css",
+	"img"
+    ],
+    "footer_links": [
+	{
+	    "url": "about.html",
+	    "name": "About"
+	},
+	{
+	    "url": "history.html",
+	    "name": "History"
+	},
+	{
+	    "url": "people.html",
+	    "name": "People"
+	},
+	{
+	    "url": "contact.html",
+	    "name": "Contact"
+	}
+    ],
+    "menu_links": [
+	{
+	    "url": "index.html",
+	    "name": "Home"
+	},
+	{
+	    "url": "downloads.html",
+	    "name": "Downloads"
+	},
+	{
+	    "url": "screenshots.html",
+	    "name": "Screenshots"
+	},
+	[
+	    "lists = soft breakpoints, content ignored"
+	],
+	{
+	    "url": "demos.html",
+	    "name": "Demos"
+	},
+	{
+	    "url": "help.html",
+	    "name": "Help"
+	}
+    ],
+    "pages": [
+	"sources/index.html",
+	"sources/about.html",
+	"sources/downloads.html",
+	"sources/screenshots.html",
+	"sources/demos.html",
+	"sources/help.html",
+	"sources/history.html",
+	"sources/people.html",
+	"sources/contact.html"
+    ],
+    "template": "sources/template.html"
+}
