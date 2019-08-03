@@ -206,3 +206,14 @@ footer a
 {
     background-color: #f2f2f2;
 }
+
+.demos iframe,
+.demos embed
+{
+    width:100%;
+}
+
+.demos h2
+{
+    margin-top:40px;
+}
