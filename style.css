@@ -12,14 +12,9 @@ header
     text-align:center;
 }
 
-h1
+h1, h2, h3
 {
     font-family:Ubuntu, Arial, sans-serif;
-}
-
-h2
-{
-    text-align:center;
 }
 
 hr
@@ -188,4 +183,26 @@ footer a
 {
     padding: 0px 20px;
     white-space:nowrap;
+}
+
+.linktable
+{
+    margin:auto;
+    border-spacing:0px;
+}
+
+.linktable td
+{
+    padding:14px;
+    text-align:right
+}
+
+.linktable td:nth-child(2)
+{
+    text-align:left;
+}
+
+.linktable tr:nth-child(2n)
+{
+    background-color: #f2f2f2;
 }
