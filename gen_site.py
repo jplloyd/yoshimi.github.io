@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Build script for the yoshimi web site
 #
 # Do not use this for anything complex,
@@ -11,6 +11,7 @@ from os import getenv, path
 from itertools import groupby
 from functools import partial
 import logging
+import tempfile
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__file__)
@@ -41,6 +42,8 @@ def gen_site(conf_data):
     to_copy = conf_data.get("copy", None)
     template = readfile(template_path)
 
+    tmp_dir = tempfile.mkdtemp()
+
     def is_divider(i):
         return isinstance(i, list)
     # Split the menu items into groups, for wrapping purposes
@@ -49,9 +52,12 @@ def gen_site(conf_data):
     # Generate the output for each source in the "pages" section
     for src in src_paths:
         gen_page(
+            tmp_dir,
             src["url"], footer_links, menu_groups,
             template, src.get("title", None)
         )
+
+    dir_util.copy_tree(tmp_dir, BUILD_DIR)
 
     if to_copy:
         copy_files(to_copy)
@@ -63,7 +69,7 @@ def gen_site(conf_data):
     )
 
 
-def gen_page(src_path, footer_links, menu_groups, template, title):
+def gen_page(tmp_dir, src_path, footer_links, menu_groups, template, title):
     src_name = path.basename(src_path)
     src = readfile(src_path)
     menu_rows = gen_menu(src_name, menu_groups)
@@ -75,7 +81,7 @@ def gen_page(src_path, footer_links, menu_groups, template, title):
         content=src,
         footer_links="".join(footer_iter)
     )
-    out_path = path.join(BUILD_DIR, src_name)
+    out_path = path.join(tmp_dir, src_name)
     with open(out_path, "w") as outfile:
         outfile.write(output)
 
