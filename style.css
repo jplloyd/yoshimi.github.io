@@ -136,6 +136,9 @@ footer
     background-color:#b8dee8;
     text-align:center;
     padding:2em;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 footer a
