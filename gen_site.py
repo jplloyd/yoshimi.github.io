@@ -98,12 +98,12 @@ def gen_footer_link(src_url, footer_link):
 
 
 def gen_menu(src_name, menu_groups):
-    row_div = '<div class="menurow">'
+    row_div = '<span class="menurow">'
     string_parts = []
     for group in menu_groups:
         string_parts.append(row_div)
         string_parts.extend([gen_menu_link(src_name, i) for i in group])
-        string_parts.append('</div>')
+        string_parts.append('</span>')
     return "".join(string_parts)
 
 
