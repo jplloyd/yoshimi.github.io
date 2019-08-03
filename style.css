@@ -17,6 +17,11 @@ h1
     font-family:Ubuntu, Arial, sans-serif;
 }
 
+h2
+{
+    text-align:center;
+}
+
 hr
 {
     border: 0px;
@@ -24,6 +29,7 @@ hr
     background-repeat:no-repeat;
     background-position:center;
     height:40px;
+    padding:1em;
 }
 
 ul
@@ -127,7 +133,6 @@ main
     padding-top:0em;
     max-width:1000px;
     margin:auto;
-    text-align:center
 }
 
 main img
@@ -145,4 +150,42 @@ footer
 footer a
 {
     margin:1em;
+}
+
+.person
+{
+    font-weight:bold;
+    font-family:serif;
+    font-size:1.1em;
+}
+
+.yoshimi
+{
+    color:#8c224c;
+    font-weight:bold;
+    font-family:serif;
+    font-size:1.1em;
+}
+
+.zyn
+{
+    color:#1d683b;
+    font-weight:bold;
+    font-family:serif;
+    /* 
+      More capital letters in zyn, make
+      it slightly smaller to compensate
+    */
+    font-size:1.05em;
+}
+
+.center-padded
+{
+    text-align:center;
+}
+
+.center-padded a
+{
+    padding: 0px 20px;
+    white-space:nowrap;
 }
