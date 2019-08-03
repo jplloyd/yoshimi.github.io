@@ -228,3 +228,14 @@ footer a
     margin-bottom:10px;
     margin-top:20px;
 }
+
+.history p
+{
+    font-size:20px;
+    margin: 1.5em 0em;
+}
+
+.history .person
+{
+    font-size:1em;
+}
