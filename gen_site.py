@@ -48,7 +48,10 @@ def gen_site(conf_data):
 
     # Generate the output for each source in the "pages" section
     for src in src_paths:
-        gen_page(src, footer_links, menu_groups, template)
+        gen_page(
+            src["url"], footer_links, menu_groups,
+            template, src.get("title", None)
+        )
 
     if to_copy:
         copy_files(to_copy)
@@ -60,12 +63,14 @@ def gen_site(conf_data):
     )
 
 
-def gen_page(src_path, footer_links, menu_groups, template):
+def gen_page(src_path, footer_links, menu_groups, template, title):
     src_name = path.basename(src_path)
     src = readfile(src_path)
     menu_rows = gen_menu(src_name, menu_groups)
     footer_iter = map(partial(gen_footer_link, src_name), footer_links)
+    title_name = title if title else "Yoshimi"
     output = template.format(
+        title=title_name,
         menu_rows=menu_rows,
         content=src,
         footer_links="".join(footer_iter)

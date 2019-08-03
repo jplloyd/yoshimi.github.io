@@ -47,15 +47,41 @@
 	}
     ],
     "pages": [
-	"sources/index.html",
-	"sources/about.html",
-	"sources/downloads.html",
-	"sources/screenshots.html",
-	"sources/demos.html",
-	"sources/help.html",
-	"sources/history.html",
-	"sources/people.html",
-	"sources/contact.html"
-    ],
+  {
+    "url": "sources/index.html"
+  },
+  {
+    "title": "Yoshimi - About",
+    "url": "sources/about.html"
+  },
+  {
+    "title": "Yoshimi - Downloads",
+    "url": "sources/downloads.html"
+  },
+  {
+    "title": "Yoshimi - Screenshots",
+    "url": "sources/screenshots.html"
+  },
+  {
+    "title": "Yoshimi - Demos",
+    "url": "sources/demos.html"
+  },
+  {
+    "title": "Yoshimi - Docs",
+    "url": "sources/help.html"
+  },
+  {
+    "title": "Yoshimi - History",
+    "url": "sources/history.html"
+  },
+  {
+    "title": "Yoshimi - People",
+    "url": "sources/people.html"
+  },
+  {
+    "title": "Yoshimi - Contact",
+    "url": "sources/contact.html"
+  }
+],
     "template": "sources/template.html"
 }
