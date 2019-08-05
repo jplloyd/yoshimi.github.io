@@ -159,7 +159,7 @@ footer a
     color:#8c224c;
     font-weight:bold;
     font-family:serif;
-    font-size:1.1em;
+    font-size:1.05em;
 }
 
 .zyn
@@ -171,7 +171,7 @@ footer a
       More capital letters in zyn, make
       it slightly smaller to compensate
     */
-    font-size:1.05em;
+    font-size:1.02em;
 }
 
 .center-padded
@@ -231,7 +231,6 @@ iframe, embed
 
 .history p
 {
-    font-size:20px;
     margin: 1.5em 0em;
 }
 
