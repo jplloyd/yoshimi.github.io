@@ -50,12 +50,12 @@ ul p
     font-family:sans-serif;
 }
 
-.menuwrapper
+.nav-wrapper
 {
     background-color: #9ce0f1;
 }
 
-menu
+nav
 {
     margin: 0px auto;
     max-width:800px;
@@ -70,7 +70,7 @@ menu
     justify-content: center;
 }
 
-.menurow
+.nav-row
 {
     display:flex;
     flex-direction: row;
@@ -85,24 +85,24 @@ h1
     padding:1em;
 }
 
-menu:nth-child(2)
+nav:nth-child(2)
 {
     min-width:40%;
 }
 
-menu a
+nav a
 {
     text-decoration: none;
     color: #000;
     padding:0.5em;
 }
 
-menu a:hover
+nav a:hover
 {
     text-shadow: rgba(0,0,0, 0.2) 1px 1px 1px;
 }
 
-menu a:visited
+nav a:visited
 {
     color:inherit;
 }
@@ -113,7 +113,7 @@ menu a:visited
     box-shadow: rgba(0,0,0,0.5) 0px 0px 4px;
 }
 
-#mainwrapper
+#main-wrapper
 {
     background-color:#fff;
 }
@@ -148,9 +148,10 @@ footer a
 
 .person
 {
+    white-space:nowrap;
     font-weight:bold;
     font-family:serif;
-    font-size:1.1em;
+    font-size:1.05em;
 }
 
 .yoshimi

@@ -98,7 +98,7 @@ def gen_footer_link(src_url, footer_link):
 
 
 def gen_menu(src_name, menu_groups):
-    row_div = '<span class="menurow">'
+    row_div = '<span class="nav-row">'
     string_parts = []
     for group in menu_groups:
         string_parts.append(row_div)
