@@ -1,7 +1,7 @@
 body
 {
     margin:0px;
-    background-image: url(img/bg.png);
+    background-image: url(img/bg_alt.png);
     font-family: sans-serif;
 }
 
@@ -73,8 +73,8 @@ ul p
 {
     /* background-color: #9ce0f1; */
     background-color: rgba(255, 255, 255, 0.7);
-    border: solid #333;
-    border-width: 1px 0px;
+    border:solid #555;
+    border-width:1px 0px;
 }
 
 nav
@@ -156,8 +156,7 @@ main img
 footer
 {
     background-color:rgba(255, 255, 255, 0.7);
-    border: solid #333;
-    border-width: 1px 0px;
+    border-top:solid 1px #555;
     text-align:center;
     padding:2em;
     display:flex;
