@@ -69,6 +69,17 @@ ul p
     font-family:sans-serif;
 }
 
+
+@media screen and (max-width: 500px) {
+    header{
+	text-align:center;
+    }
+    #robot
+    {
+	display:none;
+    }
+}
+
 .nav-wrapper
 {
     /* background-color: #9ce0f1; */
