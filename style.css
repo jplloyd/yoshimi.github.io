@@ -7,9 +7,11 @@ body
 
 header
 {
-    background-color: #aaeeff;
+    position:relative;
     color: #000;
-    text-align:center;
+    text-align:left;
+    max-width: 1000px;
+    margin:auto;
 }
 
 h1, h2, h3
@@ -36,23 +38,43 @@ ul p
     font-style: italic;
 }
 
+#logo-wrapper
+{
+    margin:1em;
+    position:relative;
+    line-height:0px;
+}
+
+#robot
+{
+    position:absolute;
+    /* Align slightly below to account for head assymetry */
+    bottom:-1px;
+    right:2em;
+    /* Based on the ratio of the robot head and the logo */
+    max-width:9.225vw;
+}
+
 #logo
 {
-    margin-top:1em;
     max-width: 50vw;
     max-height: 100px;
 }
 
+
 #subtitle
 {
-    margin:1em;
+    margin:1em 2em;
     font-size: 16px;
     font-family:sans-serif;
 }
 
 .nav-wrapper
 {
-    background-color: #9ce0f1;
+    /* background-color: #9ce0f1; */
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid #333;
+    border-width: 1px 0px;
 }
 
 nav
@@ -133,7 +155,9 @@ main img
 
 footer
 {
-    background-color:#b8dee8;
+    background-color:rgba(255, 255, 255, 0.7);
+    border: solid #333;
+    border-width: 1px 0px;
     text-align:center;
     padding:2em;
     display:flex;

@@ -9,16 +9,19 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="img/logo.png" alt="Yoshimi"/><br />
+      <div id="logo-wrapper">
+	<img id="logo" src="img/logo.png" alt="Yoshimi"/>
+	<img id="robot" src="img/robot_head.png" alt="Pink robot"/>
+      </div>
       <div id="subtitle">
 	Software synthesizer for Linux
       </div>
-      <div class="nav-wrapper">
-	<nav>
-	  {menu_rows}
-	</nav>
-      </div>
     </header>
+    <div class="nav-wrapper">
+      <nav>
+	{menu_rows}
+      </nav>
+    </div>
     <div id="main-wrapper">
       <main>
         {content}
