@@ -192,9 +192,13 @@ footer a
     width:100%;
 }
 
-.linktable td,
-.linktable th
+.linktable td, .linktable th
 {
+    /* Assumes two columns, but if more are added the layout needs to
+       be adjusted regardless (can't have paired right-left alignment
+       with e.g. three columns).
+     */
+    width:50%;
     padding:14px;
     text-align:right
 }
