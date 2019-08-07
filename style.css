@@ -242,7 +242,37 @@ iframe, embed
     margin: 1.5em 0em;
 }
 
+.history q
+{
+    font-size: 1.2em;
+}
+
 .history .person
 {
     font-size:1em;
+}
+
+blockquote {
+    display: block;
+    max-width: 800px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 1em;
+    padding-bottom: 0.5em;
+    margin: 1.5em auto;
+    position: relative;
+}
+
+blockquote a
+{
+    color:black;
+    text-decoration:none;
+}
+
+.attribution
+{
+    text-align:right;
+    font-family:serif;
+    font-size:0.9em;
 }
