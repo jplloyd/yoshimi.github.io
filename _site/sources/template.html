@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+    <link rel=stylesheet type="text/css" href="style.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div id="logo-wrapper">
+	<img id="logo" src="img/logo.png" alt="Yoshimi"/>
+	<img id="robot" src="img/robot_head.png" alt="Pink robot"/>
+      </div>
+      <div id="subtitle">
+	Software synthesizer for Linux
+      </div>
+    </header>
+    <div class="nav-wrapper">
+      <nav>
+	{menu_rows}
+      </nav>
+    </div>
+    <div id="main-wrapper">
+      <main>
+        {content}
+      </main>
+    </div>
+    <footer>
+      {footer_links}
+    </footer>
+  </body>
+</html>

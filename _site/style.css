@@ -1,0 +1,312 @@
+body
+{
+    margin:0px;
+    background-image: url(img/bg_alt.png);
+    font-family: sans-serif;
+}
+
+header
+{
+    position:relative;
+    color: #000;
+    text-align:left;
+    max-width: 1000px;
+    margin:auto;
+}
+
+h1, h2, h3
+{
+    font-family:Ubuntu, Arial, sans-serif;
+}
+
+hr
+{
+    border: 0px;
+    padding:1em;
+}
+
+ul
+{
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+}
+
+ul p
+{
+    font-weight:normal;
+    font-style: italic;
+}
+
+#logo-wrapper
+{
+    margin:1em;
+    position:relative;
+    line-height:0px;
+}
+
+#robot
+{
+    position:absolute;
+    /* Align slightly below to account for head assymetry */
+    bottom:-1px;
+    right:2em;
+    /* Based on the ratio of the robot head and the logo */
+    max-width:9.225vw;
+}
+
+#logo
+{
+    max-width: 50vw;
+    max-height: 100px;
+}
+
+
+#subtitle
+{
+    margin:1em 2em;
+    font-size: 16px;
+    font-family:sans-serif;
+}
+
+
+@media screen and (max-width: 500px) {
+    header{
+	text-align:center;
+    }
+    #robot
+    {
+	display:none;
+    }
+}
+
+.nav-wrapper
+{
+    /* background-color: #9ce0f1; */
+    background-color: rgba(255, 255, 255, 0.7);
+    border:solid #555;
+    border-width:1px 0px;
+}
+
+nav
+{
+    margin: 0px auto;
+    max-width:800px;
+    font-family: Ubuntu, Arial, sans-serif;
+    font-weight:bold;
+    font-size: 16px;
+    padding: 0.5em;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-row
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h1
+{
+    text-align:center;
+    margin:0px;
+    padding:1em;
+}
+
+nav:nth-child(2)
+{
+    min-width:40%;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #000;
+    padding:0.5em;
+}
+
+nav a:hover
+{
+    text-shadow: rgba(0,0,0, 0.2) 1px 1px 1px;
+}
+
+nav a:visited
+{
+    color:inherit;
+}
+
+.active
+{
+    border-radius: 5px 5px;
+    box-shadow: rgba(0,0,0,0.5) 0px 0px 4px;
+}
+
+#main-wrapper
+{
+    background-color:#fff;
+}
+
+main
+{
+    padding:1em;
+    padding-top:0em;
+    max-width:1000px;
+    margin:auto;
+}
+
+main img
+{
+    max-width:100%;
+}
+
+footer
+{
+    background-color:rgba(255, 255, 255, 0.7);
+    border-top:solid 1px #555;
+    text-align:center;
+    padding:2em;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+footer a
+{
+    margin:1em;
+}
+
+.person
+{
+    white-space:nowrap;
+    font-weight:bold;
+    font-family:serif;
+    font-size:1.05em;
+}
+
+.yoshimi
+{
+    color:#8c224c;
+    font-weight:bold;
+    font-family:serif;
+    font-size:1.05em;
+}
+
+.zyn
+{
+    color:#1d683b;
+    font-weight:bold;
+    font-family:serif;
+    /* 
+      More capital letters in zyn, make
+      it slightly smaller to compensate
+    */
+    font-size:1.02em;
+}
+
+.center-padded
+{
+    text-align:center;
+}
+
+.center-padded a
+{
+    padding: 0px 20px;
+    white-space:nowrap;
+}
+
+.linktable
+{
+    border-spacing:0px;
+    border: 1px solid #777;
+    width:100%;
+}
+
+.linktable td, .linktable th
+{
+    /* Assumes two columns, but if more are added the layout needs to
+       be adjusted regardless (can't have paired right-left alignment
+       with e.g. three columns).
+     */
+    width:50%;
+    padding:14px;
+    text-align:right
+}
+
+.linktable td:nth-child(2),
+.linktable th:nth-child(2)
+{
+    text-align:left;
+}
+
+.linktable tr:nth-child(2n)
+{
+    background-color: #eeeeee;
+}
+
+iframe, embed
+{
+    width:100%;
+    border: 0px;
+}
+
+.demos h2
+{
+    margin-top:40px;
+}
+
+.screenshots
+{
+    text-align:center;
+}
+.screenshots img
+{
+    box-shadow:rgba(0,0,0,0.6) -4px 4px 10px;
+    margin-bottom:2em;
+    margin-top:3em;
+}
+
+
+.history p
+{
+    margin: 1.5em 0em;
+}
+
+.history q
+{
+    font-size: 1.2em;
+}
+
+.history .person
+{
+    font-size:1em;
+}
+
+blockquote {
+    display: block;
+    max-width: 800px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 1em;
+    padding-bottom: 0.5em;
+    margin: 1.5em auto;
+    position: relative;
+}
+
+blockquote a
+{
+    color:black;
+    text-decoration:none;
+}
+
+.attribution
+{
+    text-align:right;
+    font-family:serif;
+    font-size:0.9em;
+}
